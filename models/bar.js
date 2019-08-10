@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    var Bar = sequelize.define("bars", {
+    var Bar = sequelize.define("bar", {
         name: DataTypes.STRING,
         timeStart: DataTypes.TIME,
         timeEnd: DataTypes.TIME,
