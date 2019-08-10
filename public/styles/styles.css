@@ -1,3 +1,64 @@
-.list-group-item {
-  line-height: 2.5;
+/* HOMEPAGE */
+h1 {
+  font-family: "Bungee Shade", cursive;
+  /* font-family: 'Bungee Inline', cursive; */
+  /* font-family: 'Limelight', cursive; */
+  font-size: 225px;
+  color: rgb(247, 207, 77);
+  margin-top: -25px;
+}
+
+#back {
+  background-color: black;
+}
+
+.card-img {
+  margin-top: 20px;
+  height: 300px;
+  width: 350px;
+  margin-left: 150px;
+}
+
+h2 {
+  font-family: "Limelight", cursive;
+  color: rgb(247, 207, 77);
+}
+
+#button {
+  font-family: "Limelight", cursive;
+  font-size: 30px;
+  margin-left: 125px;
+  color: white;
+  background-color: rgb(191, 145, 6);
+}
+
+body {
+  background-image: url("../images/background2.jpg");
+}
+
+/* VIEW HAPPY HOURS */
+
+#header {
+  background-color: black;
+  text-align: center;
+}
+
+#title {
+  font-family: "Bungee Shade", cursive;
+  color: rgb(247, 207, 77);
+}
+
+#sub-title {
+  font-family: "Limelight", cursive;
+  font-size: 30px;
+  color: rgb(247, 207, 77);
+}
+
+#lefthead, #righthead {
+  background-color: rgb(191, 145, 6);
+  font-family: "Limelight", cursive;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+
 }
