@@ -1,11 +1,11 @@
 module.exports = function (sequelize, DataTypes) {
-    var Bar = sequelize.define("bars", {
+    var Bar = sequelize.define("Bar", {
         name: DataTypes.STRING,
         timeStart: DataTypes.TIME,
         timeEnd: DataTypes.TIME,
-        address: Sequelize.STRING,
+        address: DataTypes.STRING,
         latitude: {
-            type: Sequelize.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: true,
             defaultValue: null,
             validate: {
@@ -14,7 +14,7 @@ module.exports = function (sequelize, DataTypes) {
             }
         },
         longitude: {
-            type: Sequelize.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: true,
             defaultValue: null,
             validate: {
@@ -23,7 +23,8 @@ module.exports = function (sequelize, DataTypes) {
             }
         },
         price: DataTypes.INTEGER,
-        rating: DataTypes.INTEGER,
+        rating: DataTypes.INTEGER
+
     });
     return Bar;
 };
