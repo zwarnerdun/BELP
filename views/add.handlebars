@@ -4,44 +4,41 @@
         <a href="/" style="color:white">← Back To Home</a>
     </div>
     <form>
-      <div class="form-row">
-        <div class="form-group col-md-8">
-          <label for="barName">Name of Bar</label>
+      <div class="container" id="form">
+      <div class="form-row" id="row">
+        <div class="form-group col-md-7">
+          <label for="barName" id="label">Name of Bar</label>
           <input type="text" class="form-control" id="barName" placeholder="Enter your favorite watering hole!">
         </div>
-        <div class="form-group col-md-8">
-          <label for="city">Address</label>
+        
+        <div class="form-group col-md-7">
+          <label for="address" id="label">Address</label>
           <input type="text" class="form-control" id="newCity" placeholder="City">
         </div>
         
-          <div class="form-group col-md-6">
-              <label for="happyStart">Happy Hour Start</label>
-            
+          <div class="form-group col-md-7">
+              <label for="happyStart" id="label">Happy Hour Start</label>
               <input type="time" class="form-control" id="timeStart" placeholder="Happy Hour Start">
               <span class="input-group-addon">
                 <span class="glyphicon glyphicon-time"></span>
               </span>
             </div>
-          </div>
-        
-        
-          <div class="form-group col-md-6">
-              <label for="happyEnd">Happy Hour End</label>
-           
+
+          <div class="form-group col-md-7">
+              <label for="happyEnd" id="label">Happy Hour End</label>
               <input type="time" class="form-control" id="timeEnd" placeholder="Happy Hour End">
               <span class="input-group-addon">
                 <span class="glyphicon glyphicon-time"></span>
               </span>
             </div>
-          
-        
     
         <!-- <div class="form-group col-md-7">
           <label for="location">Lat, Long</label>
           <input type="text" class="form-control" id="location" />
         </div> -->
-        <div class="form-group col-md-6">
-          <label for="inputPrice">Price</label>
+
+        <div class="form-group col-md-7">
+          <label for="inputPrice" id="label">Price</label>
           <select id="inputPrice" class="form-control">
             <option selected="">Choose...</option>
             <option>1</option>
@@ -51,8 +48,8 @@
             <option>5</option>
           </select>
         </div>
-        <div class="form-group col-md-6">
-          <label for="inputRating">Rating</label>
+        <div class="form-group col-md-7">
+          <label for="inputRating" id="label">Rating</label>
           <select id="inputRating" class="form-control">
             <option selected="">Choose...</option>
             <option>1</option>
@@ -62,8 +59,11 @@
             <option>5</option>
           </select>
         </div>
-      
+      <div class="form-group col-md-7">
       <button type="submit" class="btn btn-primary" id="addBar">
         Add Bar!
       </button>
-    </form>
+      </div>
+      </form>
+    </div>
+
