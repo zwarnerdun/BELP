@@ -11,8 +11,14 @@ module.exports = function(app) {
   // Create a new bar
   app.post("/api/bars", function(req, res) {
     db.Bar.create({
-      text: req.body.text
+      name: req.body.name,
+      timeStart: req.body.timeStart,
+      timeEnd: req.body.timeEnd,
+      address: req.body.address,
+      price: req.body.price,
+      rating: req.body.rating
     }).then(function(dbBar) {
+      console.log("new bar added")
       res.json(dbBar)
     }).catch(function(err) {
       res.json(err)
