@@ -94,3 +94,7 @@ body {
   color: black;
   font-size: 20px;
 }
+
+#map {
+  height: 100%;
+}
