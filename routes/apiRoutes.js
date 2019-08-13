@@ -10,7 +10,7 @@ module.exports = function(app) {
 
   // Create a new bar
   app.post("/api/bars", function(req, res) {
-    console.log(req.body)
+    console.log(req.body);
     db.Bar.create({
       name: req.body.name,
       timeStart: req.body.timeStart,
@@ -20,22 +20,23 @@ module.exports = function(app) {
       longitude: req.body.latitude,
       price: req.body.price,
       rating: req.body.rating
-    }).then(function(dbBar) {
-      console.log("new bar added")
-      res.json(dbBar)
-    }).catch(function(err) {
-      console.log(err)
-      res.json(err)
-      
-    });
+    })
+      .then(function(dbBar) {
+        console.log("new bar added");
+        res.json(dbBar);
+      })
+      .catch(function(err) {
+        console.log(err);
+        res.json(err);
+      });
   });
 
   // Delete a bar by id
   app.delete("/api/bars/:id", function(req, res) {
-    db.Bar.destroy({ 
-      where: { 
-        id: req.params.id 
-      } 
+    db.Bar.destroy({
+      where: {
+        id: req.params.id
+      }
     }).then(function(dbBar) {
       res.json(dbBar);
     });

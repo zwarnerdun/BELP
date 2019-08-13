@@ -9,7 +9,7 @@ module.exports = function(app) {
         bars: bars
       });
     });
-  }); 
+  });
 
   // Load example page and pass in an example by id
   app.get("/view", function(req, res) {
@@ -22,7 +22,7 @@ module.exports = function(app) {
 
   app.get("/add", function(req, res) {
     res.render("add");
-    });
+  });
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
