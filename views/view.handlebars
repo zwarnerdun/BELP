@@ -10,9 +10,15 @@
                 <div class="panel panel-default">
                     <div class="panel-heading" id="lefthead">Happy Hour</div>
                     <div class="panel-body">
-                        <ul>
+                        <ul id="barList">
                             {{#each bars}}
-                            <li>{{this.name}}</li>
+                            <ul id="barName">{{this.name}}</ul>
+                            <ul>Start: {{this.timeStart}}</ul>
+                            <ul>End: {{this.timeEnd}}</ul>
+                            <ul>Price (1-5): {{this.price}}</ul>
+                            <ul>Rating (1-5): {{this.rating}}</ul>
+                            --------------------------------------
+<br>
                             {{/each}}
                         </ul>
                     </div>
