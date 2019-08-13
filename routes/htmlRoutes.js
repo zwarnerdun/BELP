@@ -1,4 +1,5 @@
 var db = require("../models");
+var moment = require("moment");
 
 module.exports = function(app) {
   // Load index page
@@ -15,7 +16,12 @@ module.exports = function(app) {
   app.get("/view", function(req, res) {
     db.Bar.findAll({}).then(function(bars) {
       res.render("view", {
-        bars: bars
+        bars: bars.map(function(item) {
+          return Object.assign({}, item, {
+            timeStart: moment(item.timeStart, "HH:mm").format("hh:mm a"),
+            timeEnd: moment(item.timeEnd, "HH:mm").format("hh:mm a")
+          });
+        })
       });
     });
   });
