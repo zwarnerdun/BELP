@@ -3,19 +3,19 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Bar.findAll({}).then(function(dbBar) {
+    db.Bar.findAll({}).then(function(bars) {
       res.render("index", {
         msg: "Welcome!",
-        Bar: dbBar
+        bars: bars
       });
     });
-  });
+  }); 
 
   // Load example page and pass in an example by id
   app.get("/view", function(req, res) {
-    db.Bar.findAll({}).then(function(dbBar) {
+    db.Bar.findAll({}).then(function(bars) {
       res.render("view", {
-        Bar: dbBar
+        bars: bars
       });
     });
   });

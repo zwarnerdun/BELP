@@ -11,6 +11,12 @@ $(function () {
       rating: $("#inputRating").val().trim(),
     };
     console.log(newBar);
-    
+    $.ajax("/api/bars", {
+      type: "POST",
+      data: newBar
+    }).then(function(){
+      console.log("added" + newBar);
+      location.reload();
+    });
   });
 });
