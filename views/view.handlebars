@@ -1,34 +1,31 @@
-    <div class="container" id="header">
-            <h1 id="title">BELP</h1>
-            <p id="sub-title">Happy Hours</p>
-            <a href="/" style="color:white">← Back To Home</a>
-        </div>
-        
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading" id="lefthead">Happy Hour</div>
-                    <div class="panel-body">
-                        <ul>
-                            {{#each bars}}
-                            <li>{{this.name}}</li>
-                            {{/each}}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading" id="righthead">Location</div>
-                    <div id="map"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<div class="container" id="header">
+    <h1 id="title">BELP</h1>
+    <p id="sub-title">Happy Hours</p>
+    <a href="/" style="color:white">← Back To Home</a>
 </div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="lefthead">Happy Hour</div>
+                <div class="panel-body">
+                    <ul>
+                        {{#each bars}}
+                        <li>{{this.name}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="righthead">Location</div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
