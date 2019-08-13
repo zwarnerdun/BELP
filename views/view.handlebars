@@ -1,32 +1,32 @@
-    <div class="container" id="header">
-        <h1 id="title">BELP</h1>
-        <p id="sub-title">Happy Hours</p>
-        <a href="/" style="color:white">← Back To Home</a>
-    </div>
-        
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading" id="lefthead">Happy Hour</div>
-                    <div class="panel-body">
-                        <ul id="barList">
-                            {{#each bars}}
-                            <ul id="barName2">{{this.name}}</ul>
-                            <ul>Start: {{this.timeStart}}</ul>
-                            <ul>End: {{this.timeEnd}}</ul>
-                            <ul>Price (1-5): {{this.price}}</ul>
-                            <ul>Rating (1-5): {{this.rating}}</ul>
-                            <p>----------------------------------------------------------------</p>
-<br>
-                            {{/each}}
-                        </ul>
-                    </div>
+<div class="container" id="header">
+    <h1 id="title">BELP</h1>
+    <p id="sub-title">Happy Hours</p>
+    <a href="/" style="color:white">← Back To Home</a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="lefthead">Happy Hour</div>
+                <div class="panel-body">
+                    <ul id="barList">
+                        {{#each bars}}
+                        <ul id="barName2">{{this.name}}</ul>
+                        <ul>Start: {{this.timeStart}}</ul>
+                        <ul>End: {{this.timeEnd}}</ul>
+                        <ul>Price (1-5): {{this.price}}</ul>
+                        <ul>Rating (1-5): {{this.rating}}</ul>
+                        <p>----------------------------------------------------------------</p>
+                        <br>
+                        {{/each}}
+                    </ul>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading" id="righthead">Location</div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="righthead">Location</div>
                 </div>
                 <div id="map"></div>
             </div>
