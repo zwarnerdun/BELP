@@ -11,7 +11,8 @@
                     <div class="panel-heading" id="lefthead">Happy Hour</div>
                     <div class="panel-body">
                         <ul>
-                            {{#each bar}}
+                            {{#each bars}}
+                            <li>{{this.name}}</li>
                             {{/each}}
                         </ul>
                     </div>
@@ -20,16 +21,7 @@
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading" id="righthead">Location</div>
-                    <!-- <div class="panel-body">
-                        <ul>
-                            {{#each burgers}}
-                                {{#if devoured}}
-                                    <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-                                    <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
-                                    <hr>
-                                {{/if}}
-                            {{/each}}
-                        </ul> -->
+                    <div id="map"></div>
                     </div>
                 </div>
             </div>
