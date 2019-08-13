@@ -63,6 +63,16 @@ body {
   margin-top: 10px;
 }
 
+#barList {
+  font-family: "Limelight", cursive;
+  font-size: 20px;
+  color: rgb(247, 207, 77);
+  background-color: black;
+}
+#barName2 {
+  font-size: 30px;
+}
+
 /* ADD HAPPY HOUR */
 
 #label {

@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Fernley7!",
+    "password": "",
     "database": "belpdb",
     "host": "localhost",
     "dialect": "mysql"
