@@ -1,6 +1,8 @@
 /* HOMEPAGE */
 h1 {
   font-family: "Bungee Shade", cursive;
+  /* font-family: 'Bungee Inline', cursive; */
+  /* font-family: 'Limelight', cursive; */
   font-size: 225px;
   color: rgb(247, 207, 77);
   margin-top: -25px;
@@ -67,13 +69,8 @@ body {
   color: rgb(247, 207, 77);
   background-color: black;
 }
-
 #barName2 {
   font-size: 30px;
-}
-
-#map {
-  height: 100%;
 }
 
 /* ADD HAPPY HOUR */
@@ -96,4 +93,8 @@ body {
   font-family: "Limelight", cursive;
   color: black;
   font-size: 20px;
+}
+
+#map {
+  height: 100%;
 }
