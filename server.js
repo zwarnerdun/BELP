@@ -7,6 +7,11 @@ var db = require("./models");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+var chalk = require("chalk");
+var good = chalk.bold.magenta.bgWhite;
+var websiteworks = chalk.keyword("magenta");
+console.log(good("Success"));
+console.log(websiteworks("The beers are brewing! 🍺🍺🍺"));
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
