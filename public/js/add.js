@@ -10,7 +10,7 @@ $(function() {
     // var endTime = moment(thisEnd, "hh:mm a").format("hh:mm a");
     // console.log(startTime);
 
-    console.log(endTime);
+    // console.log(endTime);
     // create  newBar object
     var newBar = {
       name: $("#barName")
