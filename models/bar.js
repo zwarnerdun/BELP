@@ -25,5 +25,6 @@ module.exports = function(sequelize, DataTypes) {
     price: DataTypes.INTEGER,
     rating: DataTypes.INTEGER
   });
+
   return Bar;
 };

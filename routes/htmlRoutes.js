@@ -18,8 +18,11 @@ module.exports = function(app) {
       res.render("view", {
         bars: bars.map(function(item) {
           return Object.assign({}, item, {
+            name: item.name,
             timeStart: moment(item.timeStart, "HH:mm").format("hh:mm a"),
-            timeEnd: moment(item.timeEnd, "HH:mm").format("hh:mm a")
+            timeEnd: moment(item.timeEnd, "HH:mm").format("hh:mm a"),
+            price: item.price,
+            rating: item.rating
           });
         })
       });
