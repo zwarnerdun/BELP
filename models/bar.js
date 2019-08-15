@@ -1,4 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
+  // create values for city so we can display in menu
+  //   create values for user count, rating and rating average
   var Bar = sequelize.define("Bar", {
     name: DataTypes.STRING,
     timeStart: DataTypes.TIME,
